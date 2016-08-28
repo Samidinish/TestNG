@@ -12,7 +12,7 @@ public class Search extends Base {
 
     @Test
     public void searchItems()throws InterruptedException{
-        typeByCss("#search-input-field", "Italy Earthquake");
+        typeByCss("#search-button", "Italy Earthquake");
         sleepFor(3);
     }
 }

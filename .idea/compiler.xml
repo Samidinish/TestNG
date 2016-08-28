@@ -25,6 +25,12 @@
         <module name="Amazon" />
         <module name="Cnn" />
         <module name="Generic" />
+      </profile>
+      <profile default="false" name="Annotation profile for webapp" enabled="true">
+        <sourceOutputDir name="../Generic/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../Generic/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="NYTimes" />
       </profile>
     </annotationProcessing>

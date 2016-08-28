@@ -20,7 +20,7 @@ public class Base {
     @BeforeMethod
     @Parameters({"url"})
     public void setUp( String url){
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\asus\\Desktop\\Selenium Drivers\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "C:\\Users\\asus\\Desktop\\geckodriver.exe");
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.navigate().to(url);
